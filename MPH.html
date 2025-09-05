@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.roboto-slab-<uniquifier> {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+        * {  ""
+            margin: 0;  
+            padding: 0;  
+            box-sizing: border-box;  
+        }  body {  
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+        line-height: 1.6;  
+        color: #333;  
+        overflow-x: hidden;  
+    }  
+
+    .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+}
+    }  
+
+    /* Header */  
+    .header {  
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);  
+        color: white;  
+        padding: 15px 0;  
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);  
+        
+    }  
+
+    .header-content {  
+        display: flex;  
+        justify-content: space-between;  
+        align-items: center;  
+        flex-wrap: wrap;  
+        gap: 20px;  
+    }  
+
+    .logo-section {  
+        display: flex;  
+        align-items: center;  
+        gap: 15px;  
+    }  
+
+    .logo {  
+        width: 60px;  
+        height: 60px;  
+        background: #ff6b35
+        border-radius: 100%;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+    
+    }  
+        .logo-img-header {  
+        width: 100%;  
+        height: 100%;
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+    }  
+
+    .college-info h1 {  
+        height: 100%;
+        width: 100%;
+        justify-items:;
+        font-size: 1.8rem;  
+        color :#ff6b35;
+        display:flex;
+        font-family:Roboto Slab;
+        font-weight: bold;
+        -webkit-text-stroke: 0.15px;
+        -webkit-text-stroke-color:black;
+        padding-bottom:none ;
+    }  
+    .affiliated-text{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        font-family: Roboto slab;
+        font-weight: bold;
+    }
+
+    .college-info p {  
+        font-size: 0.9rem;  
+        opacity: 0.8;  
+    }  
+
+    .student-login {  
+        background: #ff6b35;  
+        padding: 10px 20px;  
+        border-radius: 25px;  
+        text-decoration: none;  
+        color: white;  
+        font-weight: 600;  
+        transition: transform 0.3s ease;  
+    }  
+
+    .student-login:hover {  
+        transform: translateY(-2px);  
+        box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);  
+    }  
+
+    /* Navigation with Menu */  
+    .nav-section {
+    background: #1a2f5c;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* makes sure it stays above content */
+} 
+    }  
+
+    .nav-content {  
+        display: flex;  
+        align-items: center;  
+        gap: 20px;  
+    }  
+
+    .menu-toggle {  
+        background: #ff6b35;  
+        color: white;  
+        border: none;  
+        padding: 8px 15px;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        font-weight: 600;  
+    }  
+
+    .marquee-container {  
+        flex: 1;  
+        overflow: hidden;  
+        background: rgba(255, 255, 255, 0.1);  
+        border-radius: 5px;  
+        padding: 8px;  
+    }  
+
+    .marquee-text {  
+        animation: scroll 30s linear infinite;  
+        white-space: nowrap;  
+        color: #64b5f6;  
+        font-weight: 500;  
+    }  
+
+    @keyframes scroll {  
+        0% { transform: translateX(100%); }  
+        100% { transform: translateX(-100%); }  
+    }  
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 400px;
+            background: linear-gradient(rgba(25, 55, 109, 0.4), rgba(25, 55, 109, 0.4)), 
+url('https://i.postimg.cc/nhcgRD9Q/20250901-171648.jpg</text></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .breadcrumb a {
+            color: #FF6B35;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+            color: #FF8C5A;
+        }
+        
+            /* Welcome Section */  
+    .welcome-section {  
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  
+        color: white;  
+        padding: 50px 0;  
+        text-align: center;  
+    }  
+
+    .welcome-section h2 {  
+        font-size: 2.5rem;  
+        margin-bottom: 20px;  
+    }  
+
+    .welcome-text {  
+        max-width: 800px;  
+        margin: 0 auto;  
+        font-size: 1.2rem;  
+        line-height: 1.8;  
+        opacity: 0.9;  
+    }  
+
+/* Mobile nav menu */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background: #1a2f5c;
+  padding: 10px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.nav-links.active {
+  display: flex;
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Dropdown styles */
+.drop-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-arrow {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+  stroke: #ff6b35;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  background: #ff6b35;
+  flex-direction: column;
+}
+
+.dropdown.active .dropdown-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.dropdown-content a {
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.dropdown-content a:hover {
+  background: #ff6b35;
+  color: #fff;
+}
+
+.dropdown.active .nav-arrow {
+  transform: rotate(180deg);
+}
+
+/* Desktop nav (hover dropdowns) */
+@media (min-width: 992px) {
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background: none;
+    max-height: none;
+    opacity: 1;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #0a2a66;
+    min-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+  }
+
+  .dropdown:hover .dropdown-content {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .dropdown:hover .nav-arrow {
+    transform: rotate(180deg);
+  }
+}
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .content-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #19376D;
+            margin-bottom: 50px;
+            text-align: left;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #FF6B35;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .image-pair {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .library-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(25, 55, 109, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .library-image:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(25, 55, 109, 0.25);
+            border-color: #FF6B35;
+        }
+
+        .single-image {
+            grid-column: 1 / -1;
+            justify-self: center;
+            max-width: 500px;
+        }
+
+        /* Image placeholders with theme colors */
+        .placeholder-1 {
+            background: linear-gradient(135deg, #19376D 0%, #0B2447 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            border-left: 4px solid #FF6B35;
+        }
+
+        .placeholder-2 {
+            background: linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            border-left: 4px solid #19376D;
+        }
+
+        .placeholder-3 {
+            background: linear-gradient(135deg, #FF8C5A 0%, #FF6B35 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            border-left: 4px solid #19376D;
+        }
+
+        .placeholder-4 {
+            background: linear-gradient(135deg, #0B2447 0%, #19376D 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            border-left: 4px solid #FF6B35;
+        }
+
+        .placeholder-5 {
+            background: linear-gradient(135deg, #19376D 0%, #FF6B35 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            border-left: 4px solid #0B2447;
+        }
+
+        .placeholder-6 {
+            background: linear-gradient(135deg, #FF6B35 0%, #19376D 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            border-left: 4px solid #FF8C5A;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .image-pair {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .content-section {
+                padding: 40px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+        
+            /* Footer */  
+    .footer {  
+        background: #1a2f5c;  
+        color: white;  
+        padding: 40px 0;  
+    }  
+
+    .footer-content {  
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;  
+        gap: 40px;  
+        align-items: start;  
+    }  
+
+    .footer-logo-section {  
+        display: flex;  
+        flex-direction: column;  
+        gap: 15px;  
+    }  
+
+    .footer-logo {  
+        display: flex;  
+        align-items: center;  
+        gap: 15px;  
+    }  
+
+    .footer-logo .logo {  
+        width: 50px;  
+        height: 50px;  
+        border-radius: 50%;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+    }  
+.logo
+    .footer-logo-section h3 {  
+        color: #64b5f6;  
+        margin: 0;  
+        font-size: 1.3rem;  
+    }  
+
+    .footer-logo-section p {  
+        margin: 5px 0;  
+        opacity: 0.9;  
+    }  
+    .footer-logo-last{
+        width: 50px;  
+        height: 50px; 
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        background-color: white;
+    }
+
+    .quick-links h3 {  
+        margin-bottom: 20px;  
+        color: #64b5f6;  
+    }  
+
+    .quick-links ul {  
+        list-style: none;  
+        padding: 0;  
+    }  
+
+    .quick-links ul li {  
+        margin-bottom: 10px;  
+    }  
+
+    .quick-links ul li a {  
+        color: white;  
+        text-decoration: none;  
+        transition: color 0.3s ease;  
+        opacity: 0.9;  
+    }  
+
+    .quick-links ul li a:hover {  
+        color: #64b5f6;  
+        opacity: 1;  
+    }  
+.map-section {
+    text-align: center;
+}
+
+.map-section h3 {
+    margin-bottom: 15px;
+    color: #64b5f6;
+}
+
+.map-widget {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}  
+      
+/* Mobile Nav Menu */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #1a2f5c;
+    padding: 10px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+.nav-links a:hover {
+    background: rgba(255,255,255,0.1);
+}
+.nav-links.active {
+    display: flex;
+    max-height: 500px; /* enough for links */
+    opacity: 1;
+}
+@media (max-width: 992px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .placements-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+        <!-- Header -->  
+    <header class="header">  
+        <div class="container">  
+            <div class="header-content">  
+                <div class="logo-section">  
+                    <div class="logo"><img class="logo-img-header" src="https://i.postimg.cc/VknRXB1B/1000340942-removebg-preview.png"</div>  
+                    <div class="college-info">  
+                        <h1>NATIONAL DEGREE COLLEGE</h1>
+                        <p><span class="affiliated-text">(Affiliated with Rayalaseema University,Kurnool)</p> </span> 
+                    </div>  
+                </div>  
+                <a href="#" class="student-login">Student Login</a>  
+            </div>  
+        </div>  
+    </header>  <!-- Navigation -->  
+<nav class="nav-section">  
+    <div class="container">  
+        <div class="nav-content">  
+            <button class="menu-toggle">☰ Menu</button>  
+            <div class="marquee-container">  
+                <div class="marquee-text">  
+                    Rolling scrolling important words and announcements • Admission open for new session •   
+                    Results declared for final year • Campus placement drive starting next month •   
+                    Cultural fest registration open now • Library timing extended during exams  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</nav>  
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Multi - Purpose Hall</h1>
+            <div class="breadcrumb">
+                <a href="/Main site /demo7 1.html">Home</a> > M P H
+            </div>
+        </div>
+    </section>
+    
+    <!-- Welcome Section -->  
+<section class="welcome-section">  
+    <div class="container">  
+        <h2>🎤 📣 🗣️</h2>  
+        <div class="welcome-text">  
+            <p>A versatile hall for seminars, cultural events, and sports activities.</p>  
+        </div>  
+    </div>  
+</section>  
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">M.P.H</h2>
+            
+            <div class="image-grid">
+                <!-- First row - Reading area and circulation desk -->
+                <div class="image-pair">
+                    <div class="library-image placeholder-1">
+                        <div>IMG 1.0</div>
+                    </div>
+                    <div class="library-image placeholder-2">
+                        <div>IMG 0.1</div>
+                    </div>
+                </div>
+
+                <!-- Second row - Book stacks and magazine section -->
+                <div class="image-pair">
+                    <div class="library-image placeholder-3">
+                        <div>IMG 1</div>
+                    </div>
+                    <div class="library-image placeholder-4">
+                        <div>IMG 2</div>
+                    </div>
+                </div>
+
+                <!-- Third row - Children's section and computer area -->
+                <div class="image-pair">
+                    <div class="library-image placeholder-5">
+                        <div>IMG 3</div>
+                    </div>
+                    <div class="library-image placeholder-6">
+                        <div>IMG 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->  
+<footer class="footer">  
+    <div class="container">  
+        <div class="footer-content">  
+            <div class="footer-logo-section">  
+                <div class="footer-logo">  
+                    <div class="logo"><div><img class="footer-logo-last" src="https://i.postimg.cc/VknRXB1B/1000340942-removebg-preview.png"</div></div>  
+                    <div>  
+                        <h3>National Degree College</h3>  
+                    </div>  
+                </div>  
+                <p>📍 Srinivasa Nagar Nagar ,NANDYAL - 518501</p>  
+                <p>Andra Pradesh- India</p>  
+                <p>📧 info@excellencecollege.edu</p>  
+                  <p>📞 +91 12345 67890</p>  
+                </div>  
+                  
+                <div class="quick-links">  
+                    <h3>Quick Links</h3>  
+                    <ul>  
+                        <li><a href="#">📅 Events</a></li>  
+                        <li><a href="#">📤 Exports</a></li>  
+                        <li><a href="#">👨‍🏫 Expert Views</a></li>  
+                        <li><a href="#">ℹ️ Information</a></li>  
+                    </ul>  
+                </div>  
+                  
+               <div class="map-section">  
+    <h3>📍 Find Us</h3>  
+    <div class="map-widget">  
+        <iframe  
+            src="https://www.google.com/maps?q=National+Junior+Degree+College+Nandyala&z=16&output=embed"  
+            width="100%"  
+            height="220"  
+            style="border:0; border-radius: 12px;"  
+            allowfullscreen=""  
+            loading="lazy"  
+            referrerpolicy="no-referrer-when-downgrade">  
+        </iframe>  
+    </div>  
+</div>
+            </div>  
+        </div>  
+    </footer>  
+  
+    <script>  
+        
+  
+    // nav container
+const menuBtn = document.querySelector('.menu-toggle');
+const navLinks = document.createElement('div');
+navLinks.className = 'nav-links';
+
+//  dropdown menu by JS
+navLinks.innerHTML = `
+  <a href="/About/about.html">About Us</a>
+
+  <div class="dropdown">
+    <button class="drop-btn">
+      Academics
+      <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" 
+           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">College Brochure</a>
+      <a href="#">Admissions</a>
+      <a href="#">Results</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="drop-btn">
+      Departments
+      <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" 
+           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div class="dropdown-content">
+      <a href="/Faculty /faculty2.html">Languages</a>
+ <a href="/Faculty /faculty2.html">Computer Science</a>
+      <a href="/Faculty /faculty2.html">Life Sciences</a>
+      <a href="/Faculty /faculty2.html">Mathematics</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="drop-btn">
+      Facilities
+      <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" 
+           viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div class="dropdown-content">
+      <a href="/Facilities /clab.html">Computer Labs</a>
+      <a href="/Facilities /MPH.html">Multi Purpose Hall</a>
+      <a href="/Facilities /Library.html">Library</a>
+      <a href="/Facilities /Parking.html">Parking</a>
+    </div>
+  </div>
+  <a href="#">Placements</a>
+  <a href="/contact us/contact.html">Contact</a>
+  <a href="#">E-Resources</a>
+`;
+
+// Append into nav
+document.querySelector('.nav-content').appendChild(navLinks);
+
+// Mobile menu toggle
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Dropdown toggle for mobile (desktop uses hover via CSS)
+document.addEventListener("click", (e) => {
+  if (window.innerWidth < 992 && e.target.closest(".drop-btn")) {
+    const button = e.target.closest(".drop-btn");
+    const dropdown = button.parentElement;
+
+    // Close other dropdowns
+    document.querySelectorAll(".dropdown").forEach((d) => {
+      if (d !== dropdown) d.classList.remove("active");
+    });
+
+    // Toggle clicked dropdown
+    dropdown.classList.toggle("active");
+  }
+});
+
+        // Add click handlers for update items  
+        document.querySelectorAll('.update-item').forEach(item => {  
+            item.addEventListener('click', function() {  
+                const type = this.querySelector('h3').textContent.split(' ')[1];  
+                alert(`Viewing ${type}. In a full implementation, this would show detailed ${type.toLowerCase()}.`);  
+            });  
+        });  
+  
+        // Chatbot function  
+        function openChatbot() {  
+            alert('Chat Bot activated! In a full implementation, this would open a chat interface to help students with queries.');  
+        }  
+    </script>  
+</body>  
+</html>
+
+    <script>
+        // Add smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation for images
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.library-image');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            images.forEach(img => {
+                img.style.opacity = '0';
+                img.style.transform = 'translateY(20px)';
+                img.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(img);
+            });
+        });
+    </script>
+</body>
+</html>
